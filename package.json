@@ -1,6 +1,6 @@
 {
   "name": "@cj_zheng1023/vue2-contextmenu",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "main": "dist/vue2-contextmenu.js",
   "module": "dist/vue2-contextmenu.esm.js",
   "description": "a contextmenu component for vue2",
@@ -13,6 +13,10 @@
     "build": "rollup -c && npm run less",
     "less": "lessc --clean-css src/styles/styles.less dist/styles/styles.css",
     "pub": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CJ-Zheng1023/vue2-contextmenu.git"
   },
   "dependencies": {
     "core-js": "^3.6.5",
