@@ -64,7 +64,11 @@ export default {
           icon: ['ns', 'ns-history']
         }, {
           label: '菜单2',
-          icon: ['ns', 'ns-history']
+          icon: ['ns', 'ns-history'],
+          children: [{
+            label: '菜单3',
+            icon: ['ns', 'ns-history']
+          }]
         }]
       }]
     }

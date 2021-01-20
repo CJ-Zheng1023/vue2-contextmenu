@@ -1,6 +1,6 @@
 {
   "name": "@cj_zheng1023/vue2-contextmenu",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "main": "dist/vue2-contextmenu.js",
   "module": "dist/vue2-contextmenu.esm.js",
   "description": "a contextmenu component for vue2",

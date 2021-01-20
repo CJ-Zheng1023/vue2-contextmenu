@@ -17,7 +17,7 @@ export const fixSubPosition = (parent, target) => {
   const parentWidth = width(parent)
   const targetHeight = height(target)
   const targetWidth = width(target)
-  const xObj = parentOffsetX + parentWidth + targetWidth > windowWidth ? { left: '-100%', transform: 'translate(5px)' } : { left: '100%', transform: 'translate(-5px)' }
+  const xObj = parentOffsetX + parentWidth + targetWidth > windowWidth ? { right: '100%', left: 'auto', transform: 'translate(5px)' } : { left: '100%', rigth: 'auto', transform: 'translate(-5px)' }
   const yObj = parentOffsetY + targetHeight > windowHeight ? { top: windowHeight - parentOffsetY - targetHeight + 'px' } : { top: '0' }
   return Object.assign(xObj, yObj)
 }
