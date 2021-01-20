@@ -26,7 +26,8 @@ npm install vue2-contextmenu
    ```vue
    <temlate>
    	<div @contextmenu.prevent="contextmenu">
-           <contextmenu @close="visible = false" :menus="menus" :visible="visible" :x="x" :y="y">	       </contextmenu>
+           <contextmenu @close="visible = false" :menus="menus" :visible="visible" :x="x" :y="y">
+           </contextmenu>
            ... ...
            ... ...
        </div>
