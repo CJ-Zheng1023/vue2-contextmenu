@@ -16,8 +16,8 @@ npm install @cj_zheng1023/vue2-contextmenu
 1. 引入库和样式
 
    ```javascript
-   import Contextmenu from 'vue2-contextmenu'
-   import 'vue2-contextmenu/dist/styles/styles.css'
+   import Contextmenu from '@cj_zheng1023/vue2-contextmenu'
+   import '@cj_zheng1023/vue2-contextmenu/dist/styles/styles.css'
    Vue.use(Contextmenu)
    ```
 
