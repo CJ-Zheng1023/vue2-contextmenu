@@ -1,7 +1,3 @@
-const path = require('path')
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
-}
 module.exports = {
   pages: {
     index: {
@@ -9,10 +5,5 @@ module.exports = {
       template: 'public/index.html',
       filename: 'index.html'
     }
-  },
-  chainWebpack: config => {
-    config.module.rule('js').include.add(resolve('src')).end().use('babel').loader('babel-loader').tap(options => {
-      return options
-    })
   }
 }
