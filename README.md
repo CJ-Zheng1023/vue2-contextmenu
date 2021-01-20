@@ -2,13 +2,13 @@
 
 ## 安装
 ```
-yarn add vue2-contextmenu
+yarn add @cj_zheng1023/vue2-contextmenu
 ```
 
 或
 
 ```
-npm install vue2-contextmenu
+npm install @cj_zheng1023/vue2-contextmenu
 ```
 
 ### 使用
@@ -26,7 +26,8 @@ npm install vue2-contextmenu
    ```vue
    <temlate>
    	<div @contextmenu.prevent="contextmenu">
-           <contextmenu @close="visible = false" :menus="menus" :visible="visible" :x="x" :y="y">	       </contextmenu>
+           <contextmenu @close="visible = false" :menus="menus" :visible="visible" :x="x" :y="y">
+           </contextmenu>
            ... ...
            ... ...
        </div>

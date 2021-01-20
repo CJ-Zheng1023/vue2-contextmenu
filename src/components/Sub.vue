@@ -1,12 +1,12 @@
 <template>
-  <div class="ns-contextmenu_sub">
-    <div v-for="item in menus" :key="item.label" @mouseenter="showSubmenu($event, item)" @mouseleave="hideSubmenu($event, item)" @click="clickItem(item)" :class="['ns-contextmenu__item', {'ns-contextmenu__item--bordered': item.divide}, {'ns-contextmenu__item--disabled': item.disabled}]">
-      <div class="ns-contextmenu__icon" v-if="item.icon">
+  <div class="fine-contextmenu_sub">
+    <div v-for="item in menus" :key="item.label" @mouseenter="showSubmenu($event, item)" @mouseleave="hideSubmenu($event, item)" @click="clickItem(item)" :class="['fine-contextmenu__item', {'fine-contextmenu__item--bordered': item.divide}, {'fine-contextmenu__item--disabled': item.disabled}]">
+      <div class="fine-contextmenu__icon" v-if="item.icon">
         <i :class="item.icon"></i>
       </div>
-      <div class="ns-contextmenu__label">{{item.label}}</div>
+      <div class="fine-contextmenu__label">{{item.label}}</div>
       <template v-if="item.children && item.children.length">
-        <div class="ns-contextmenu__arrow">
+        <div class="fine-contextmenu__arrow">
           <i class="iconfont arrow-right"></i>
         </div>
         <sub-menu :menus="item.children"></sub-menu>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-  .ns-contextmenu_sub{
+  .fine-contextmenu_sub{
     min-width: 200px;
     position: absolute;
     background-color: #fff;

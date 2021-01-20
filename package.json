@@ -1,18 +1,18 @@
 {
-  "name": "vue2-contextmenu",
-  "version": "0.1.0",
+  "name": "@cj_zheng1023/vue2-contextmenu",
+  "version": "0.2.1",
   "main": "dist/vue2-contextmenu.js",
   "module": "dist/vue2-contextmenu.esm.js",
   "description": "a contextmenu component for vue2",
   "author": "CJ_Zheng <cj_zheng1023@hotmail.com>",
-  "private": false,
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "npm run serve",
     "lint": "vue-cli-service lint",
     "build": "rollup -c && npm run less",
-    "less": "lessc --clean-css src/styles/styles.less dist/styles/styles.css"
+    "less": "lessc --clean-css src/styles/styles.less dist/styles/styles.css",
+    "pub": "npm publish --access public"
   },
   "dependencies": {
     "core-js": "^3.6.5",

@@ -12,7 +12,7 @@ export default {
         return
       }
       const parent = event.target
-      const submenu = parent.querySelector('.ns-contextmenu_sub')
+      const submenu = parent.querySelector('.fine-contextmenu_sub')
       const styleObj = fixSubPosition(parent, submenu)
       for (const key in styleObj) {
         submenu.style[key] = styleObj[key]
@@ -23,7 +23,7 @@ export default {
       if (item.disabled || !item.children || !item.children.length) {
         return
       }
-      event.target.querySelector('.ns-contextmenu_sub').style.visibility = 'hidden'
+      event.target.querySelector('.fine-contextmenu_sub').style.visibility = 'hidden'
     }
   }
 }

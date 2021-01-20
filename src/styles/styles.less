@@ -1,40 +1,40 @@
 @import "./fonts/iconfont.css";
-.ns-contextmenu__item {
+.fine-contextmenu__item {
   position: relative;
   padding: 0 40px;
   line-height: 32px;
   user-select: none;
   cursor: pointer;
-  &.ns-contextmenu__item--disabled {
+  &.fine-contextmenu__item--disabled {
     cursor: not-allowed;
     background-color: transparent;
-    .ns-contextmenu__label,
-    .ns-contextmenu__icon {
+    .fine-contextmenu__label,
+    .fine-contextmenu__icon {
       color: #c0c4cc;
     }
   }
-  &:not(.ns-contextmenu__item--disabled) {
+  &:not(.fine-contextmenu__item--disabled) {
     &:hover {
       background-color: rgb(236, 245, 255);
-      & > .ns-contextmenu__label,
-      & > .ns-contextmenu__icon,
-      & > .ns-contextmenu__arrow {
+      & > .fine-contextmenu__label,
+      & > .fine-contextmenu__icon,
+      & > .fine-contextmenu__arrow {
         color: #409eff;
       }
     }
-    .ns-contextmenu__label,
-    .ns-contextmenu__icon,
-    .ns-contextmenu__arrow {
+    .fine-contextmenu__label,
+    .fine-contextmenu__icon,
+    .fine-contextmenu__arrow {
       color: #606266;
     }
   }
-  &.ns-contextmenu__item--bordered {
+  &.fine-contextmenu__item--bordered {
     border-bottom: 1px solid #ebeef5;
   }
-  .ns-contextmenu__label {
+  .fine-contextmenu__label {
     font-size: 13px;
   }
-  .ns-contextmenu__icon {
+  .fine-contextmenu__icon {
     height: 100%;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .ns-contextmenu__arrow {
+  .fine-contextmenu__arrow {
     height: 100%;
     display: flex;
     align-items: center;
