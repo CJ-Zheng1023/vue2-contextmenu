@@ -7,7 +7,7 @@
       <div class="fine-contextmenu__label">{{item.label}}</div>
       <template v-if="item.children && item.children.length">
         <div class="fine-contextmenu__arrow">
-          <i class="iconfont arrow-right"></i>
+          <i class="arrow-right"></i>
         </div>
         <sub-menu :menus="item.children"></sub-menu>
       </template>
